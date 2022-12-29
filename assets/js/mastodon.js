@@ -15,9 +15,13 @@ fetch(rssUrl)
     let html = `<h3>Recent Toots &#128168;</h3>`;
     items.forEach(el => {
       html += `
-        <article>
-          ${decode(el.querySelector('description').innerHTML)}
-        </article>
+        <div class="card">
+          <div class="card-body">
+            ${decode(el.querySelector('description').innerHTML)}
+            <p class="card-text"><small class="text-muted">${el.querySelector('pubDate').innerHTML}</small></p>
+          </div>
+          <img src="${el.querySelector('media:content').getAttribute('url')}" class="card-img-bottom" alt="Toot Image">
+        </div>
       `
     })
     const mastodon = document.getElementById('mastodon')
