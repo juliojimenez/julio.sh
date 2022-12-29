@@ -13,7 +13,7 @@ fetch(rssUrl)
           <img src="${el.querySelector('link').innerHTML}/image/large.png" alt="">
           <h2>
             <a href="${el.querySelector('link').innerHTML}" target="_blank" rel="noopener">
-              ${el.querySelector('title').innerHTML}
+              ${el.querySelector('description').innerHTML}
             </a>
           </h2>
         </article>
