@@ -19,5 +19,6 @@ fetch(rssUrl)
         </article>
       `
     })
-    document.body.insertAdjacentHTML('beforeend', html);
+    const mastodon = document.getElementById('mastodon')
+    mastodon.insertAdjacentHTML('beforeend', html);
   });
