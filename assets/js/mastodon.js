@@ -12,6 +12,7 @@ fetch(rssUrl)
   .then(data => {
     console.log(data)
     const items = data.querySelectorAll('item')
+    console.log(items)
     let html = `<h3>Recent Toots &#128168;</h3>`;
     items.forEach(el => {
       html += `
