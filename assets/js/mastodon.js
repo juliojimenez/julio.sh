@@ -20,7 +20,7 @@ fetch(rssUrl)
             ${decode(el.querySelector('description').innerHTML)}
             <p class="card-text"><small class="text-muted">${el.querySelector('pubDate').innerHTML}</small></p>
           </div>
-          <img src="${el.querySelector('media\\:content') !== null ? el.querySelector('media\\:content').attributes[0].textContent : ''}" class="card-img-bottom" alt="Toot Image">
+          <img src="${el.querySelector('media') !== null ? el.querySelector('media').attributes[0].textContent : ''}" class="card-img-bottom" alt="Toot Image">
         </div>
       `
     })
