@@ -1,5 +1,11 @@
 const rssUrl = 'https://fosstodon.org/@julioj.rss'
 
+const decode = (str) => {
+  const txt = document.createElement('textarea')
+  txt.innerHTML = str
+  return txt.value
+}
+
 fetch(rssUrl)
   .then(response => response.text())
   .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
