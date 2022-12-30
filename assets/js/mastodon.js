@@ -20,7 +20,7 @@ fetch(rssUrl)
         <div class="card">
           <div class="card-body">
             ${decode(el.querySelector('description').innerHTML)}
-            <p class="card-text"><small class="text-muted">${el.querySelector('pubDate').innerHTML}</small></p>
+            <p class="card-text"><small class="text-muted"><a href="${el.querySelector('link').innerHTML}" target="_blank">${el.querySelector('pubDate').innerHTML}</a></small></p>
           </div>
           ${img}
         </div>
