@@ -27,5 +27,5 @@ fetch(rssUrl)
       `
     })
     const mastodon = document.getElementById('mastodon')
-    mastodon.insertAdjacentHTML('beforeend', html);
-  });
+    mastodon.insertAdjacentHTML('beforeend', html)
+  })
