@@ -17,3 +17,7 @@ h1 {
 small {
   font-size: 0.7em;
 }
+
+.table {
+  margin-bottom: 50px;
+}
