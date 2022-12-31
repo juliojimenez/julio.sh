@@ -10,13 +10,6 @@
   margin-bottom: 30px;
 }
 
-.falling {
-  display: inline-block;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  margin: 4px auto auto 2px; 
-}
-
 #footer {
   margin: 150px auto 50px;
 }
