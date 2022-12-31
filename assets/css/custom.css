@@ -25,3 +25,7 @@ small {
 .table {
   margin-bottom: 30px;
 }
+
+.verified {
+  width: 30px;
+}
