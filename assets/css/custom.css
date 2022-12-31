@@ -10,6 +10,10 @@
   margin-bottom: 30px;
 }
 
+.falling {
+  transform: rotate(-45deg);
+}
+
 #footer {
   margin: 150px auto 50px;
 }
