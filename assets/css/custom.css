@@ -13,6 +13,7 @@
 .falling {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  display: inline-block;
 }
 
 #footer {
