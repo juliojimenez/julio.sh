@@ -14,7 +14,7 @@
   display: inline-block;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  margin: 2px auto auto 2px; 
+  margin: 4px auto auto 2px; 
 }
 
 #footer {
