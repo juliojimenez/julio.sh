@@ -1,1 +1,1 @@
-document.getElementById('verified').innerHTML = `<img src="assets/images/verified${Math.floor(Math.random() * 51) + 1}.png" class="verified" alt="Verified Bitches!">`
+document.getElementById('verified').innerHTML = `<img src="assets/images/verified/verified${Math.floor(Math.random() * 51) + 1}.png" class="verified" alt="Verified Bitches!">`

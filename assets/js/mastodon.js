@@ -10,9 +10,7 @@ fetch(rssUrl)
   .then(response => response.text())
   .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
   .then(data => {
-    console.log(data)
     const items = data.querySelectorAll('item')
-    console.log(items)
     let html = `<h3>Recent Toots &#128168;</h3>`;
     items.forEach(el => {
       const img = el.getElementsByTagName('media:content').length > 0 ? `<img src="${el.getElementsByTagName('media:content')[0].attributes[0].nodeValue}" class="card-img-bottom" alt="Toot Image">` : ''
