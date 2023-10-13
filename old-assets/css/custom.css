@@ -1,0 +1,31 @@
+.card {
+  margin-bottom: 10px;
+}
+
+.emojo {
+  width: 20px;
+}
+
+.emojo-group {
+  margin-bottom: 30px;
+}
+
+#footer {
+  margin: 150px auto 50px;
+}
+
+h1 {
+  margin: 20px 0 50px;
+}
+
+small {
+  font-size: 0.7em;
+}
+
+.table {
+  margin-bottom: 30px;
+}
+
+.verified {
+  width: 30px;
+}
