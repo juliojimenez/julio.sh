@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Julio Jimenez - The Best Programmer in the Universe</title>
+        <title>Julio Jimenez - Programmer</title>
         <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
         <link rel="stylesheet" href="assets/css/site.css">
         <link rel="stylesheet" href="assets/css/tailwind.css">
@@ -201,10 +201,12 @@
         </section>
         <section class="py-10 md:py-16">
             <div class="container max-w-screen-xl mx-auto px-4">
-                <div class="text-center">
-                    <h1 class="font-normal text-gray-300 text-3xl md:text-6xl lg:text-7xl">
-                        The journey of a thousand miles<br />begins with one step.
-                    </h1>
+                <div class="text-center"
+                     hx-on="htmx:configRequest: event.detail.headers='';"
+                     hx-get="https://api.julio.sh/lao-tzu"
+                     hx-target="#lao-tzu" hx-trigger="load"
+                     hx-swap="innerHTML">
+                    <h1 class="font-normal text-gray-300 text-3xl md:text-6xl lg:text-7xl" id="lao-tzu">&nbsp;</h1>
                     <p class="font-medium text-gray-400 text-xs md:text-base">
                         Lao Tzu
                     </p>
